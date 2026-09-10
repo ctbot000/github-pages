@@ -1,0 +1,186 @@
+{
+  "owner": "ctbot000",
+  "title": "GitHub Pages Index",
+  "tagline": "Every site published from this account, in one place.",
+  "titles": {
+    "ai-news": "AI News",
+    "study-math": "Study Math",
+    "four-ball-billiards": "Four-Ball Billiards",
+    "three-cushion-billiards": "Three-Cushion Billiards",
+    "ping-pong": "Ping-Pong",
+    "picross-lab": "Picross Lab"
+  },
+  "categories": [
+    {
+      "id": "board-puzzle",
+      "name": "Board & Puzzle",
+      "icon": "♟",
+      "blurb": "Think first, click second.",
+      "repos": [
+        "chess",
+        "gomoku",
+        "picross-lab",
+        "jigsaw-puzzle",
+        "memory-game"
+      ],
+      "match": [
+        "chess",
+        "gomoku",
+        "puzzle",
+        "nonogram",
+        "picross",
+        "sudoku",
+        "memory",
+        "jigsaw",
+        "minesweeper",
+        "solitaire",
+        "card-game"
+      ]
+    },
+    {
+      "id": "sports",
+      "name": "Sports & Cue Sports",
+      "icon": "⚽",
+      "blurb": "Balls, paddles, cues and courts.",
+      "repos": [
+        "blobby-beach-volley",
+        "buzzer-beater",
+        "eight-ball",
+        "four-ball-billiards",
+        "three-cushion-billiards",
+        "ping-pong",
+        "soccer-game",
+        "pocket-links"
+      ],
+      "match": [
+        "billiard",
+        "carom",
+        "pool",
+        "soccer",
+        "football",
+        "basketball",
+        "volley",
+        "tennis",
+        "ping-pong",
+        "golf",
+        "baseball",
+        "bowling",
+        "sports"
+      ]
+    },
+    {
+      "id": "arcade",
+      "name": "Arcade & Action",
+      "icon": "👾",
+      "blurb": "Reflex games with a short fuse.",
+      "repos": [
+        "catch-insects",
+        "cola-bomb",
+        "fly-game",
+        "jump-rush",
+        "snake-game",
+        "skyline-courier"
+      ],
+      "match": [
+        "arcade",
+        "endless-runner",
+        "runner",
+        "shooter",
+        "dodge",
+        "platformer",
+        "snake",
+        "jump",
+        "flight",
+        "drone",
+        "racing",
+        "action"
+      ]
+    },
+    {
+      "id": "sim",
+      "name": "Simulation & Craft",
+      "icon": "🍳",
+      "blurb": "Build, tend, dig and brew.",
+      "repos": [
+        "barista-game",
+        "cooking-game",
+        "fishing-game",
+        "pet-raising-game",
+        "deep-drift"
+      ],
+      "match": [
+        "simulation",
+        "idle",
+        "tycoon",
+        "management",
+        "cooking",
+        "farming",
+        "fishing",
+        "mining",
+        "raising",
+        "crafting",
+        "barista"
+      ]
+    },
+    {
+      "id": "learning",
+      "name": "Learning & Quiz",
+      "icon": "🎓",
+      "blurb": "Practice drills that keep score.",
+      "repos": [
+        "capital-quiz",
+        "chinese-game",
+        "english-word-game",
+        "fun-english-game",
+        "fun-math-game",
+        "keyboard-game",
+        "math-game"
+      ],
+      "match": [
+        "quiz",
+        "education",
+        "learning",
+        "study",
+        "english",
+        "korean",
+        "chinese",
+        "math",
+        "vocabulary",
+        "typing",
+        "keyboard",
+        "kids",
+        "geography",
+        "flashcard"
+      ]
+    },
+    {
+      "id": "tools",
+      "name": "Notes & Tools",
+      "icon": "🧰",
+      "blurb": "Things that are not games.",
+      "repos": [
+        "ai-news",
+        "pomodoro-timer",
+        "study-math"
+      ],
+      "match": [
+        "notes",
+        "timer",
+        "pomodoro",
+        "news",
+        "digest",
+        "tool",
+        "utility",
+        "dashboard",
+        "tracker",
+        "reference"
+      ]
+    }
+  ],
+  "fallback": {
+    "id": "unsorted",
+    "name": "Unsorted",
+    "icon": "✨",
+    "blurb": "New sites land here until they are filed."
+  }
+}

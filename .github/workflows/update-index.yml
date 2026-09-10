@@ -1,0 +1,54 @@
+name: Update index
+
+# Rebuilds index.html from the GitHub API and commits it when anything changed.
+#
+# Runs on a schedule so a newly published site shows up without anyone touching
+# this repo, and on repository_dispatch so a repo that just turned Pages on can
+# push the index forward immediately:
+#
+#   gh api -X POST repos/ctbot000/github-pages/dispatches -f event_type=pages-changed
+
+on:
+  schedule:
+    # Every 6 hours (6 divides 24, so the interval never wraps at midnight).
+    # 00:00 / 06:00 / 12:00 / 18:00 UTC = 09:00 / 15:00 / 21:00 / 03:00 KST.
+    - cron: '0 */6 * * *'
+  repository_dispatch:
+    types: [pages-changed]
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'generate.py'
+      - 'categories.json'
+      - '.github/workflows/update-index.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-index
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate index.html
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 generate.py
+
+      - name: Commit if the index changed
+        run: |
+          if git diff --quiet -- index.html; then
+            echo "No change."
+            exit 0
+          fi
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add index.html
+          git commit -m 'Update index'
+          git push

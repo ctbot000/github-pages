@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub Pages Index · ctbot000</title>
+<meta name="description" content="Every site published from this account, in one place.">
+<meta property="og:title" content="GitHub Pages Index · ctbot000">
+<meta property="og:description" content="Every site published from this account, in one place.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%97%82%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #f6f7f9;
+  --bg-elev: #ffffff;
+  --fg: #14171c;
+  --fg-muted: #5b6472;
+  --fg-faint: #8b93a1;
+  --line: #e3e6eb;
+  --line-strong: #d0d5dd;
+  --accent: #2f6fed;
+  --accent-soft: #e8f0ff;
+  --shadow: 0 1px 2px rgba(16,24,40,.06), 0 8px 24px -12px rgba(16,24,40,.18);
+  --radius: 14px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1116;
+    --bg-elev: #161b22;
+    --fg: #e6edf3;
+    --fg-muted: #9aa5b1;
+    --fg-faint: #6e7781;
+    --line: #262c36;
+    --line-strong: #333b46;
+    --accent: #6ea8ff;
+    --accent-soft: #16243d;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR",
+        Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+.wrap { max-width: 1140px; margin: 0 auto; padding: 0 20px 72px; }
+
+header.top { padding: 56px 0 28px; }
+h1 { margin: 0 0 8px; font-size: 30px; letter-spacing: -.02em; }
+h1 .at { color: var(--fg-faint); font-weight: 400; }
+.tagline { margin: 0; color: var(--fg-muted); font-size: 15px; }
+.meta { margin: 14px 0 0; color: var(--fg-faint); font-size: 13px; }
+.meta a { color: var(--accent); }
+
+.controls {
+  position: sticky; top: 0; z-index: 10;
+  margin: 0 -20px 26px; padding: 12px 20px;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.search {
+  display: block; width: 100%; padding: 10px 13px;
+  font: inherit; color: var(--fg);
+  background: var(--bg-elev);
+  border: 1px solid var(--line-strong); border-radius: 10px;
+}
+.search:focus { outline: 2px solid var(--accent); outline-offset: 1px; border-color: transparent; }
+.search::placeholder { color: var(--fg-faint); }
+.pills { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 10px; }
+.pill {
+  padding: 5px 12px; font-size: 13px; cursor: pointer;
+  color: var(--fg-muted); background: var(--bg-elev);
+  border: 1px solid var(--line-strong); border-radius: 999px;
+}
+.pill:hover { color: var(--fg); }
+.pill[aria-pressed="true"] {
+  color: var(--accent); background: var(--accent-soft);
+  border-color: color-mix(in srgb, var(--accent) 45%, transparent);
+}
+.pill .n { color: var(--fg-faint); margin-left: 5px; font-variant-numeric: tabular-nums; }
+
+section.cat { margin: 0 0 38px; }
+section.cat > h2 {
+  display: flex; align-items: baseline; gap: 9px;
+  margin: 0 0 3px; font-size: 17px; letter-spacing: -.01em;
+}
+section.cat > h2 .count {
+  font-size: 12px; font-weight: 500; color: var(--fg-faint);
+  font-variant-numeric: tabular-nums;
+}
+section.cat > .blurb { margin: 0 0 14px; color: var(--fg-faint); font-size: 13px; }
+
+.grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(272px, 1fr)); }
+.card {
+  display: flex; flex-direction: column; gap: 8px;
+  padding: 15px 16px 13px;
+  background: var(--bg-elev);
+  border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform .12s ease, border-color .12s ease;
+}
+.card:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
+.card h3 { margin: 0; font-size: 15.5px; letter-spacing: -.01em; }
+.card h3 a::after { content: ""; position: absolute; inset: 0; }
+.card { position: relative; }
+.card p { margin: 0; color: var(--fg-muted); font-size: 13.5px; flex: 1; }
+.card .foot {
+  display: flex; align-items: center; gap: 10px;
+  margin-top: 3px; padding-top: 9px;
+  border-top: 1px solid var(--line);
+  font-size: 12px; color: var(--fg-faint);
+}
+.card .foot .repo { position: relative; z-index: 1; color: var(--fg-faint); }
+.card .foot .repo:hover { color: var(--accent); text-decoration: underline; }
+.card .foot .spacer { flex: 1; }
+.card .foot time { font-variant-numeric: tabular-nums; }
+
+.empty { display: none; padding: 40px 0; color: var(--fg-faint); text-align: center; }
+body.no-results .empty { display: block; }
+[hidden] { display: none !important; }
+
+footer.bot {
+  margin-top: 44px; padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--fg-faint); font-size: 12.5px;
+}
+footer.bot a { color: var(--accent); }
+@media (max-width: 560px) {
+  header.top { padding: 34px 0 20px; }
+  h1 { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+<h1>GitHub Pages Index <span class="at">· ctbot000</span></h1>
+<p class="tagline">Every site published from this account, in one place.</p>
+<p class="meta">34 live sites across 6 categories · latest activity 2026-09-09 (KST) · <a href="https://github.com/ctbot000">github.com/ctbot000</a></p>
+</header>
+<div class="controls">
+<input id="search" class="search" type="search" autocomplete="off" placeholder="Search sites — press / to focus" aria-label="Search sites">
+<div class="pills">
+<button class="pill" data-cat="all" aria-pressed="true">All<span class="n">34</span></button>
+<button class="pill" data-cat="board-puzzle" aria-pressed="false">♟ Board &amp; Puzzle<span class="n">5</span></button>
+<button class="pill" data-cat="sports" aria-pressed="false">⚽ Sports &amp; Cue Sports<span class="n">8</span></button>
+<button class="pill" data-cat="arcade" aria-pressed="false">👾 Arcade &amp; Action<span class="n">6</span></button>
+<button class="pill" data-cat="sim" aria-pressed="false">🍳 Simulation &amp; Craft<span class="n">5</span></button>
+<button class="pill" data-cat="learning" aria-pressed="false">🎓 Learning &amp; Quiz<span class="n">7</span></button>
+<button class="pill" data-cat="tools" aria-pressed="false">🧰 Notes &amp; Tools<span class="n">3</span></button>
+</div>
+</div>
+<main>
+<section class="cat" id="board-puzzle">
+<h2>♟ Board &amp; Puzzle <span class="count">5</span></h2>
+<p class="blurb">Think first, click second.</p>
+<div class="grid">
+<article class="card" data-cat="board-puzzle" data-search="chess a complete chess game in the browser — full rules, a built-in engine, no dependencies. ">
+<h3><a href="https://ctbot000.github.io/chess/">Chess</a></h3>
+<p>A complete chess game in the browser — full rules, a built-in engine, no dependencies.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/chess">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-07">updated 2026-09-07</time>
+</div>
+</article>
+<article class="card" data-cat="board-puzzle" data-search="gomoku five in a row on a 15x15 board, with an alpha-beta ai opponent. no build step, no dependencies. ">
+<h3><a href="https://ctbot000.github.io/gomoku/">Gomoku</a></h3>
+<p>Five in a row on a 15x15 board, with an alpha-beta AI opponent. No build step, no dependencies.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/gomoku">source</a>
+<span class="spacer"></span>
+<time datetime="2026-08-15">updated 2026-08-15</time>
+</div>
+</article>
+<article class="card" data-cat="board-puzzle" data-search="jigsaw-puzzle a browser jigsaw puzzle with real interlocking pieces, group dragging, optional rotation and procedurally generated pictures. no dependencies, no build step. ">
+<h3><a href="https://ctbot000.github.io/jigsaw-puzzle/">Jigsaw Puzzle</a></h3>
+<p>A browser jigsaw puzzle with real interlocking pieces, group dragging, optional rotation and procedurally generated pictures. No dependencies, no build step.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/jigsaw-puzzle">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-07">updated 2026-09-07</time>
+</div>
+</article>
+<article class="card" data-cat="board-puzzle" data-search="memory-game a dependency-free card-matching memory game in vanilla html, css and javascript. ">
+<h3><a href="https://ctbot000.github.io/memory-game/">Memory Game</a></h3>
+<p>A dependency-free card-matching memory game in vanilla HTML, CSS and JavaScript.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/memory-game">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-07">updated 2026-09-07</time>
+</div>
+</article>
+<article class="card" data-cat="board-puzzle" data-search="picross-lab a nonogram puzzle game where every board is verified solvable by pure logic — you never have to guess. ">
+<h3><a href="https://ctbot000.github.io/picross-lab/">Picross Lab</a></h3>
+<p>A nonogram puzzle game where every board is verified solvable by pure logic — you never have to guess.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/picross-lab">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-06">updated 2026-09-06</time>
+</div>
+</article>
+</div>
+</section>
+<section class="cat" id="sports">
+<h2>⚽ Sports &amp; Cue Sports <span class="count">8</span></h2>
+<p class="blurb">Balls, paddles, cues and courts.</p>
+<div class="grid">
+<article class="card" data-cat="sports" data-search="blobby-beach-volley a two-blob beach volleyball game in the browser. no build step, no dependencies, seeded physics core with a headless test suite. canvas game github-pages javascript volleyball">
+<h3><a href="https://ctbot000.github.io/blobby-beach-volley/">Blobby Beach Volley</a></h3>
+<p>A two-blob beach volleyball game in the browser. No build step, no dependencies, seeded physics core with a headless test suite.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/blobby-beach-volley">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-08">updated 2026-09-08</time>
+</div>
+</article>
+<article class="card" data-cat="sports" data-search="buzzer-beater a 60-second arcade basketball shootout in the browser. no dependencies, just canvas. ">
+<h3><a href="https://ctbot000.github.io/buzzer-beater/">Buzzer Beater</a></h3>
+<p>A 60-second arcade basketball shootout in the browser. No dependencies, just canvas.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/buzzer-beater">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-07">updated 2026-09-07</time>
+</div>
+</article>
+<article class="card" data-cat="sports" data-search="eight-ball three-dimensional eight-ball pool in the browser — break, run your group, sink the 8. no build step. ">
+<h3><a href="https://ctbot000.github.io/eight-ball/">Eight Ball</a></h3>
+<p>Three-dimensional eight-ball pool in the browser — break, run your group, sink the 8. No build step.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/eight-ball">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-08">updated 2026-09-08</time>
+</div>
+</article>
+<article class="card" data-cat="sports" data-search="four-ball-billiards korean four-ball carom billiards (사구) in the browser — two reds, two cue balls, no pockets. plain html/css/js. ">
+<h3><a href="https://ctbot000.github.io/four-ball-billiards/">Four-Ball Billiards</a></h3>
+<p>Korean four-ball carom billiards (사구) in the browser — two reds, two cue balls, no pockets. Plain HTML/CSS/JS.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/four-ball-billiards">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-08">updated 2026-09-08</time>
+</div>
+</article>
+<article class="card" data-cat="sports" data-search="ping-pong a small browser ping-pong game: canvas, no build step, cpu or two players. ">
+<h3><a href="https://ctbot000.github.io/ping-pong/">Ping-Pong</a></h3>
+<p>A small browser ping-pong game: canvas, no build step, CPU or two players.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/ping-pong">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-08">updated 2026-09-08</time>
+</div>
+</article>
+<article class="card" data-cat="sports" data-search="pocket-links a nine-hole mini golf game that runs entirely in the browser. no dependencies, no build step. ">
+<h3><a href="https://ctbot000.github.io/pocket-links/">Pocket Links</a></h3>
+<p>A nine-hole mini golf game that runs entirely in the browser. No dependencies, no build step.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/pocket-links">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-09">updated 2026-09-09</time>
+</div>
+</article>
+<article class="card" data-cat="sports" data-search="soccer-game touchline — a six-a-side arcade soccer game that runs in any browser. vanilla js, no build step, headlessly tested match engine. canvas game html5-game javascript no-dependencies soccer">
+<h3><a href="https://ctbot000.github.io/soccer-game/">Soccer Game</a></h3>
+<p>Touchline — a six-a-side arcade soccer game that runs in any browser. Vanilla JS, no build step, headlessly tested match engine.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/soccer-game">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-07">updated 2026-09-07</time>
+</div>
+</article>
+<article class="card" data-cat="sports" data-search="three-cushion-billiards three-cushion carom billiards in the browser: a real physics engine with spin and cushion friction, and an opponent that searches for its shots. billiards canvas game javascript physics-simulation">
+<h3><a href="https://ctbot000.github.io/three-cushion-billiards/">Three-Cushion Billiards</a></h3>
+<p>Three-cushion carom billiards in the browser: a real physics engine with spin and cushion friction, and an opponent that searches for its shots.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/three-cushion-billiards">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-08">updated 2026-09-08</time>
+</div>
+</article>
+</div>
+</section>
+<section class="cat" id="arcade">
+<h2>👾 Arcade &amp; Action <span class="count">6</span></h2>
+<p class="blurb">Reflex games with a short fuse.</p>
+<div class="grid">
+<article class="card" data-cat="arcade" data-search="catch-insects a 60-second insect-catching game for the browser. plain html, css and javascript, no dependencies. ">
+<h3><a href="https://ctbot000.github.io/catch-insects/">Catch Insects</a></h3>
+<p>A 60-second insect-catching game for the browser. Plain HTML, CSS and JavaScript, no dependencies.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/catch-insects">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-09">updated 2026-09-09</time>
+</div>
+</article>
+<article class="card" data-cat="arcade" data-search="cola-bomb pull the safe cola bottles out of the crate and leave the shaken ones alone — a single-file browser game. ">
+<h3><a href="https://ctbot000.github.io/cola-bomb/">Cola Bomb</a></h3>
+<p>Pull the safe cola bottles out of the crate and leave the shaken ones alone — a single-file browser game.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/cola-bomb">source</a>
+<span class="spacer"></span>
+<time datetime="2026-08-31">updated 2026-08-31</time>
+</div>
+</article>
+<article class="card" data-cat="arcade" data-search="fly-game a tiny arcade game about a housefly with poor life choices. canvas, no dependencies. arcade-game canvas game html5-game javascript">
+<h3><a href="https://ctbot000.github.io/fly-game/">Fly Game</a></h3>
+<p>A tiny arcade game about a housefly with poor life choices. Canvas, no dependencies.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/fly-game">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-06">updated 2026-09-06</time>
+</div>
+</article>
+<article class="card" data-cat="arcade" data-search="jump-rush an endless jumping game in one canvas — no build step, no dependencies. canvas endless-runner game html5-game javascript no-dependencies">
+<h3><a href="https://ctbot000.github.io/jump-rush/">Jump Rush</a></h3>
+<p>An endless jumping game in one canvas — no build step, no dependencies.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/jump-rush">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-06">updated 2026-09-06</time>
+</div>
+</article>
+<article class="card" data-cat="arcade" data-search="skyline-courier a 2d physics drone-delivery game. fly the package, land it soft, don&#x27;t clip the wires. runs in the browser with no build step. ">
+<h3><a href="https://ctbot000.github.io/skyline-courier/">Skyline Courier</a></h3>
+<p>A 2D physics drone-delivery game. Fly the package, land it soft, don&#x27;t clip the wires. Runs in the browser with no build step.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/skyline-courier">source</a>
+<span class="spacer"></span>
+<time datetime="2026-08-17">updated 2026-08-17</time>
+</div>
+</article>
+<article class="card" data-cat="arcade" data-search="snake-game a dependency-free snake game in the browser: canvas rendering, fixed-timestep loop, smooth interpolated movement. ">
+<h3><a href="https://ctbot000.github.io/snake-game/">Snake Game</a></h3>
+<p>A dependency-free snake game in the browser: canvas rendering, fixed-timestep loop, smooth interpolated movement.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/snake-game">source</a>
+<span class="spacer"></span>
+<time datetime="2026-08-16">updated 2026-08-16</time>
+</div>
+</article>
+</div>
+</section>
+<section class="cat" id="sim">
+<h2>🍳 Simulation &amp; Craft <span class="count">5</span></h2>
+<p class="blurb">Build, tend, dig and brew.</p>
+<div class="grid">
+<article class="card" data-cat="sim" data-search="barista-game ☕ bean &amp; brew — a dependency-free browser barista game. grind, pull, steam and serve before your customers walk out. ">
+<h3><a href="https://ctbot000.github.io/barista-game/">Barista Game</a></h3>
+<p>☕ Bean &amp; Brew — a dependency-free browser barista game. Grind, pull, steam and serve before your customers walk out.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/barista-game">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-07">updated 2026-09-07</time>
+</div>
+</article>
+<article class="card" data-cat="sim" data-search="cooking-game skillet rush - a browser cooking game with a 3d skillet. read the tickets, build the dish, ride the heat band. no build step. ">
+<h3><a href="https://ctbot000.github.io/cooking-game/">Cooking Game</a></h3>
+<p>Skillet Rush - a browser cooking game with a 3D skillet. Read the tickets, build the dish, ride the heat band. No build step.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/cooking-game">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-08">updated 2026-09-08</time>
+</div>
+</article>
+<article class="card" data-cat="sim" data-search="deep-drift a browser mining game: dig down, get rich, upgrade the rig, find the core. no build step, no dependencies. ">
+<h3><a href="https://ctbot000.github.io/deep-drift/">Deep Drift</a></h3>
+<p>A browser mining game: dig down, get rich, upgrade the rig, find the Core. No build step, no dependencies.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/deep-drift">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-09">updated 2026-09-09</time>
+</div>
+</article>
+<article class="card" data-cat="sim" data-search="fishing-game deep blue — a small browser fishing game. cast into the deep, fight what bites, fill the fishdex. no build step, no dependencies. browser-game canvas fishing-game game github-pages html5-game javascript no-dependencies">
+<h3><a href="https://ctbot000.github.io/fishing-game/">Fishing Game</a></h3>
+<p>Deep Blue — a small browser fishing game. Cast into the deep, fight what bites, fill the Fishdex. No build step, no dependencies.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/fishing-game">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-05">updated 2026-09-05</time>
+</div>
+</article>
+<article class="card" data-cat="sim" data-search="pet-raising-game a browser pet raising game: hatch an egg and raise it through five life stages and twelve forms. no dependencies, no build step. ">
+<h3><a href="https://ctbot000.github.io/pet-raising-game/">Pet Raising Game</a></h3>
+<p>A browser pet raising game: hatch an egg and raise it through five life stages and twelve forms. No dependencies, no build step.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/pet-raising-game">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-08">updated 2026-09-08</time>
+</div>
+</article>
+</div>
+</section>
+<section class="cat" id="learning">
+<h2>🎓 Learning &amp; Quiz <span class="count">7</span></h2>
+<p class="blurb">Practice drills that keep score.</p>
+<div class="grid">
+<article class="card" data-cat="learning" data-search="capital-quiz 나라 이름을 보고 수도를 맞히는 웹 퀴즈 (un 회원국 193개국, 한국어/영어) geography github-pages korean quiz vanilla-js">
+<h3><a href="https://ctbot000.github.io/capital-quiz/">Capital Quiz</a></h3>
+<p>나라 이름을 보고 수도를 맞히는 웹 퀴즈 (UN 회원국 193개국, 한국어/영어)</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/capital-quiz">source</a>
+<span class="spacer"></span>
+<time datetime="2026-08-27">updated 2026-08-27</time>
+</div>
+</article>
+<article class="card" data-cat="learning" data-search="chinese-game 한국인 학습자를 위한 중국어 게임 — 낱말·성조·한자·듣기·어순 5가지 모드 ">
+<h3><a href="https://ctbot000.github.io/chinese-game/">Chinese Game</a></h3>
+<p>한국인 학습자를 위한 중국어 게임 — 낱말·성조·한자·듣기·어순 5가지 모드</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/chinese-game">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-06">updated 2026-09-06</time>
+</div>
+</article>
+<article class="card" data-cat="learning" data-search="english-word-game guess a five-letter word in six tries — a dependency-free english word game with a definition for every answer. ">
+<h3><a href="https://ctbot000.github.io/english-word-game/">English Word Game</a></h3>
+<p>Guess a five-letter word in six tries — a dependency-free English word game with a definition for every answer.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/english-word-game">source</a>
+<span class="spacer"></span>
+<time datetime="2026-08-14">updated 2026-08-14</time>
+</div>
+</article>
+<article class="card" data-cat="learning" data-search="fun-english-game 🦁 word safari — a fun english word game for kids. one html file, no install, no dependencies. education english game javascript kids no-dependencies">
+<h3><a href="https://ctbot000.github.io/fun-english-game/">Fun English Game</a></h3>
+<p>🦁 Word Safari — a fun English word game for kids. One HTML file, no install, no dependencies.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/fun-english-game">source</a>
+<span class="spacer"></span>
+<time datetime="2026-08-29">updated 2026-08-29</time>
+</div>
+</article>
+<article class="card" data-cat="learning" data-search="fun-math-game 🚀 math blast — a colourful, keyboard-friendly arithmetic game for kids. no build, no dependencies. ">
+<h3><a href="https://ctbot000.github.io/fun-math-game/">Fun Math Game</a></h3>
+<p>🚀 Math Blast — a colourful, keyboard-friendly arithmetic game for kids. No build, no dependencies.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/fun-math-game">source</a>
+<span class="spacer"></span>
+<time datetime="2026-08-29">updated 2026-08-29</time>
+</div>
+</article>
+<article class="card" data-cat="learning" data-search="keyboard-game 한글 두벌식 · 영문 qwerty 타자 연습 게임 — 브라우저 ime 없이 동작하는 한글 조합 오토마타. 의존성 없는 단일 페이지. ">
+<h3><a href="https://ctbot000.github.io/keyboard-game/">Keyboard Game</a></h3>
+<p>한글 두벌식 · 영문 QWERTY 타자 연습 게임 — 브라우저 IME 없이 동작하는 한글 조합 오토마타. 의존성 없는 단일 페이지.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/keyboard-game">source</a>
+<span class="spacer"></span>
+<time datetime="2026-08-17">updated 2026-08-17</time>
+</div>
+</article>
+<article class="card" data-cat="learning" data-search="math-game 한국어 숫자 읽기 연습 게임 — korean number reading practice, up to 조 (trillion). no build step, no dependencies. ">
+<h3><a href="https://ctbot000.github.io/math-game/">Math Game</a></h3>
+<p>한국어 숫자 읽기 연습 게임 — Korean number reading practice, up to 조 (trillion). No build step, no dependencies.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/math-game">source</a>
+<span class="spacer"></span>
+<time datetime="2026-08-19">updated 2026-08-19</time>
+</div>
+</article>
+</div>
+</section>
+<section class="cat" id="tools">
+<h2>🧰 Notes &amp; Tools <span class="count">3</span></h2>
+<p class="blurb">Things that are not games.</p>
+<div class="grid">
+<article class="card" data-cat="tools" data-search="ai-news automated ai news digest, refreshed every 5 hours ">
+<h3><a href="https://ctbot000.github.io/ai-news/">AI News</a></h3>
+<p>Automated AI news digest, refreshed every 5 hours</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/ai-news">source</a>
+<span class="spacer"></span>
+<time datetime="2026-08-29">updated 2026-08-29</time>
+</div>
+</article>
+<article class="card" data-cat="tools" data-search="pomodoro-timer a minimal, dependency-free pomodoro timer that runs entirely in the browser. ">
+<h3><a href="https://ctbot000.github.io/pomodoro-timer/">Pomodoro Timer</a></h3>
+<p>A minimal, dependency-free Pomodoro timer that runs entirely in the browser.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/pomodoro-timer">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-02">updated 2026-09-02</time>
+</div>
+</article>
+<article class="card" data-cat="tools" data-search="study-math a record of what i learn about mathematics — one idea per note, indexed. ">
+<h3><a href="https://ctbot000.github.io/study-math/">Study Math</a></h3>
+<p>A record of what I learn about mathematics — one idea per note, indexed.</p>
+<div class="foot">
+<a class="repo" href="https://github.com/ctbot000/study-math">source</a>
+<span class="spacer"></span>
+<time datetime="2026-09-06">updated 2026-09-06</time>
+</div>
+</article>
+</div>
+</section>
+</main>
+<p class="empty">No site matches that search.</p>
+<footer class="bot">
+Generated from the GitHub API by <a href="https://github.com/ctbot000/github-pages">github-pages</a>. New sites are picked up automatically.
+</footer>
+</div>
+<script>
+(function () {
+  var search = document.getElementById('search');
+  var pills = Array.prototype.slice.call(document.querySelectorAll('.pill'));
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var sections = Array.prototype.slice.call(document.querySelectorAll('section.cat'));
+  var active = 'all';
+
+  function apply() {
+    var q = search.value.trim().toLowerCase();
+    var shown = 0;
+    cards.forEach(function (card) {
+      var okCat = active === 'all' || card.dataset.cat === active;
+      var okText = !q || card.dataset.search.indexOf(q) !== -1;
+      var visible = okCat && okText;
+      card.hidden = !visible;
+      if (visible) shown++;
+    });
+    sections.forEach(function (s) {
+      s.hidden = !s.querySelector('.card:not([hidden])');
+    });
+    document.body.classList.toggle('no-results', shown === 0);
+  }
+
+  search.addEventListener('input', apply);
+  pills.forEach(function (pill) {
+    pill.addEventListener('click', function () {
+      active = pill.dataset.cat;
+      pills.forEach(function (p) {
+        p.setAttribute('aria-pressed', String(p === pill));
+      });
+      apply();
+    });
+  });
+  document.addEventListener('keydown', function (ev) {
+    if (ev.key === '/' && document.activeElement !== search) {
+      ev.preventDefault();
+      search.focus();
+    } else if (ev.key === 'Escape' && document.activeElement === search) {
+      search.value = '';
+      apply();
+      search.blur();
+    }
+  });
+})();
+</script>
+</body>
+</html>
