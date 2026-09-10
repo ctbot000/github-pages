@@ -8,7 +8,8 @@
     "four-ball-billiards": "Four-Ball Billiards",
     "three-cushion-billiards": "Three-Cushion Billiards",
     "ping-pong": "Ping-Pong",
-    "picross-lab": "Picross Lab"
+    "picross-lab": "Picross Lab",
+    "pinball": "Neon Drift Pinball"
   },
   "categories": [
     {
@@ -78,8 +79,9 @@
         "cola-bomb",
         "fly-game",
         "jump-rush",
-        "snake-game",
-        "skyline-courier"
+        "pinball",
+        "skyline-courier",
+        "snake-game"
       ],
       "match": [
         "arcade",
@@ -93,7 +95,8 @@
         "flight",
         "drone",
         "racing",
-        "action"
+        "action",
+        "pinball"
       ]
     },
     {
