@@ -10,7 +10,8 @@
     "ping-pong": "Ping-Pong",
     "picross-lab": "Picross Lab",
     "pinball": "Neon Drift Pinball",
-    "jump-rush": "Jump Rush 3D"
+    "jump-rush": "Jump Rush 3D",
+    "candy-necklace-game": "Sugar Strand"
   },
   "categories": [
     {
@@ -78,6 +79,7 @@
       "icon": "👾",
       "blurb": "Reflex games with a short fuse.",
       "repos": [
+        "candy-necklace-game",
         "catch-insects",
         "fly-game",
         "jump-rush",
