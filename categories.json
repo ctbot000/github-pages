@@ -19,6 +19,7 @@
       "blurb": "Think first, click second.",
       "repos": [
         "chess",
+        "cola-bomb",
         "gomoku",
         "picross-lab",
         "jigsaw-puzzle",
@@ -26,6 +27,7 @@
       ],
       "match": [
         "chess",
+        "cola-bomb",
         "gomoku",
         "puzzle",
         "nonogram",
@@ -76,7 +78,6 @@
       "blurb": "Reflex games with a short fuse.",
       "repos": [
         "catch-insects",
-        "cola-bomb",
         "fly-game",
         "jump-rush",
         "pinball",
