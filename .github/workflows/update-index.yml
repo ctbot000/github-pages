@@ -26,6 +26,8 @@ on:
 permissions:
   contents: write
 
+# Queue overlapping runs instead of generating twice at once. This is not what
+# keeps the push from failing — see the commit step for that.
 concurrency:
   group: update-index
   cancel-in-progress: false
@@ -42,13 +44,42 @@ jobs:
         run: python3 generate.py
 
       - name: Commit if the index changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if git diff --quiet -- index.html; then
-            echo "No change."
-            exit 0
-          fi
           git config user.name  'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add index.html
-          git commit -m 'Update index'
-          git push
+
+          # Queueing alone cannot make this push safe. Every run pins
+          # `github.sha` when it is *created*, so two triggers that arrive
+          # together (a push and its follow-up dispatch, or the schedule and a
+          # dispatch) resolve to the same base commit; the one that waits its
+          # turn still checks out the commit the winner has already pushed past,
+          # and its push is rejected as a non-fast-forward.
+          #
+          # index.html is a pure function of live GitHub API state — nothing in
+          # it is read from the repository — so rebuilding it on top of whatever
+          # landed *is* the merge. No conflict is possible, and the rebuild
+          # usually turns into the "no change" early-out below, because the run
+          # that won generated the same bytes seconds earlier.
+          for attempt in 1 2 3; do
+            if git diff --quiet -- index.html; then
+              echo "No change."
+              exit 0
+            fi
+
+            git add index.html
+            git commit -m 'Update index'
+
+            if git push; then
+              exit 0
+            fi
+
+            echo "Push rejected (attempt ${attempt}/3) — another run got there first; rebuilding on its commit."
+            git fetch origin main
+            git reset --hard FETCH_HEAD
+            python3 generate.py
+          done
+
+          echo "::error::Could not push index.html after 3 attempts."
+          exit 1
