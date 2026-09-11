@@ -11,7 +11,8 @@
     "picross-lab": "Picross Lab",
     "pinball": "Neon Drift Pinball",
     "jump-rush": "Jump Rush 3D",
-    "candy-necklace-game": "Sugar Strand"
+    "candy-necklace-game": "Sugar Strand",
+    "rhythm-game": "PULSEGRID"
   },
   "categories": [
     {
@@ -84,6 +85,7 @@
         "fly-game",
         "jump-rush",
         "pinball",
+        "rhythm-game",
         "skyline-courier",
         "snake-game"
       ],
@@ -100,7 +102,10 @@
         "drone",
         "racing",
         "action",
-        "pinball"
+        "pinball",
+        "rhythm",
+        "music",
+        "beat"
       ]
     },
     {
