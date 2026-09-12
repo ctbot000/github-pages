@@ -17,7 +17,8 @@
     "room-escape-game": "Fogbound",
     "piano-game": "Key Cascade",
     "guitar-game": "Fretboard Fever",
-    "ironhold-tower-defense": "Ironhold"
+    "ironhold-tower-defense": "Ironhold",
+    "drum-game": "Beat Machine"
   },
   "categories": [
     {
@@ -97,6 +98,7 @@
         "candy-necklace-game",
         "car-racing-game",
         "catch-insects",
+        "drum-game",
         "fly-game",
         "guitar-game",
         "jump-rush",
@@ -129,7 +131,9 @@
         "piano",
         "keys",
         "guitar",
-        "fret"
+        "fret",
+        "drum",
+        "percussion"
       ]
     },
     {
