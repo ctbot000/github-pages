@@ -12,7 +12,8 @@
     "pinball": "Neon Drift Pinball",
     "jump-rush": "Jump Rush 3D",
     "candy-necklace-game": "Sugar Strand",
-    "rhythm-game": "PULSEGRID"
+    "rhythm-game": "PULSEGRID",
+    "car-racing-game": "Sunset Circuit"
   },
   "categories": [
     {
@@ -81,6 +82,7 @@
       "blurb": "Reflex games with a short fuse.",
       "repos": [
         "candy-necklace-game",
+        "car-racing-game",
         "catch-insects",
         "fly-game",
         "jump-rush",
