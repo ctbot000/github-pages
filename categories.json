@@ -15,7 +15,8 @@
     "rhythm-game": "PULSEGRID",
     "car-racing-game": "Sunset Circuit",
     "room-escape-game": "Fogbound",
-    "piano-game": "Key Cascade"
+    "piano-game": "Key Cascade",
+    "guitar-game": "Fretboard Fever"
   },
   "categories": [
     {
@@ -91,6 +92,7 @@
         "car-racing-game",
         "catch-insects",
         "fly-game",
+        "guitar-game",
         "jump-rush",
         "piano-game",
         "pinball",
@@ -119,7 +121,9 @@
         "climbing",
         "mountain",
         "piano",
-        "keys"
+        "keys",
+        "guitar",
+        "fret"
       ]
     },
     {
