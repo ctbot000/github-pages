@@ -85,6 +85,7 @@
       "icon": "👾",
       "blurb": "Reflex games with a short fuse.",
       "repos": [
+        "ascent",
         "candy-necklace-game",
         "car-racing-game",
         "catch-insects",
@@ -111,7 +112,10 @@
         "pinball",
         "rhythm",
         "music",
-        "beat"
+        "beat",
+        "ascent",
+        "climbing",
+        "mountain"
       ]
     },
     {
