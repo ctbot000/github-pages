@@ -16,7 +16,8 @@
     "car-racing-game": "Sunset Circuit",
     "room-escape-game": "Fogbound",
     "piano-game": "Key Cascade",
-    "guitar-game": "Fretboard Fever"
+    "guitar-game": "Fretboard Fever",
+    "ironhold-tower-defense": "Ironhold"
   },
   "categories": [
     {
@@ -28,6 +29,7 @@
         "chess",
         "cola-bomb",
         "gomoku",
+        "ironhold-tower-defense",
         "jigsaw-puzzle",
         "memory-game",
         "picross-lab",
@@ -47,7 +49,11 @@
         "solitaire",
         "card-game",
         "room-escape",
-        "escape"
+        "escape",
+        "tower-defense",
+        "tower defense",
+        "strategy",
+        "defense"
       ]
     },
     {
