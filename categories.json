@@ -13,7 +13,8 @@
     "jump-rush": "Jump Rush 3D",
     "candy-necklace-game": "Sugar Strand",
     "rhythm-game": "PULSEGRID",
-    "car-racing-game": "Sunset Circuit"
+    "car-racing-game": "Sunset Circuit",
+    "room-escape-game": "Fogbound"
   },
   "categories": [
     {
@@ -25,9 +26,10 @@
         "chess",
         "cola-bomb",
         "gomoku",
-        "picross-lab",
         "jigsaw-puzzle",
-        "memory-game"
+        "memory-game",
+        "picross-lab",
+        "room-escape-game"
       ],
       "match": [
         "chess",
@@ -41,7 +43,9 @@
         "jigsaw",
         "minesweeper",
         "solitaire",
-        "card-game"
+        "card-game",
+        "room-escape",
+        "escape"
       ]
     },
     {
