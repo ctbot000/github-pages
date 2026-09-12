@@ -14,7 +14,8 @@
     "candy-necklace-game": "Sugar Strand",
     "rhythm-game": "PULSEGRID",
     "car-racing-game": "Sunset Circuit",
-    "room-escape-game": "Fogbound"
+    "room-escape-game": "Fogbound",
+    "piano-game": "Key Cascade"
   },
   "categories": [
     {
@@ -91,6 +92,7 @@
         "catch-insects",
         "fly-game",
         "jump-rush",
+        "piano-game",
         "pinball",
         "rhythm-game",
         "skyline-courier",
@@ -115,7 +117,9 @@
         "beat",
         "ascent",
         "climbing",
-        "mountain"
+        "mountain",
+        "piano",
+        "keys"
       ]
     },
     {
