@@ -21,7 +21,8 @@
     "ironhold-tower-defense": "Ironhold",
     "drum-game": "Beat Machine",
     "how-an-air-conditioner-works": "How an Air Conditioner Works",
-    "computer-internal": "How a Computer Works"
+    "computer-internal": "How a Computer Works",
+    "knowledge-base": "Knowledge Base"
   },
   "categories": [
     {
@@ -208,6 +209,7 @@
         "computer-internal",
         "how-an-air-conditioner-works",
         "how-claude-code-works",
+        "knowledge-base",
         "pomodoro-timer",
         "study-english",
         "study-math"
