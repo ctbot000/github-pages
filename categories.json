@@ -22,6 +22,7 @@
     "drum-game": "Beat Machine",
     "how-an-air-conditioner-works": "How an Air Conditioner Works",
     "computer-internal": "How a Computer Works",
+    "llm-internal": "How an LLM Works",
     "mobile-phone-internal": "How a Mobile Phone Works",
     "how-the-internet-works": "How the Internet Works",
     "knowledge-base": "Knowledge Base"
@@ -213,6 +214,7 @@
         "how-claude-code-works",
         "how-the-internet-works",
         "knowledge-base",
+        "llm-internal",
         "mobile-phone-internal",
         "pomodoro-timer",
         "study-english",
