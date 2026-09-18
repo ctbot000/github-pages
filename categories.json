@@ -18,7 +18,8 @@
     "piano-game": "Key Cascade",
     "guitar-game": "Fretboard Fever",
     "ironhold-tower-defense": "Ironhold",
-    "drum-game": "Beat Machine"
+    "drum-game": "Beat Machine",
+    "how-an-air-conditioner-works": "How an Air Conditioner Works"
   },
   "categories": [
     {
@@ -202,6 +203,7 @@
       "blurb": "Things that are not games.",
       "repos": [
         "ai-news",
+        "how-an-air-conditioner-works",
         "how-claude-code-works",
         "pomodoro-timer",
         "study-math"
