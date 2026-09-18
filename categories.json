@@ -5,6 +5,7 @@
   "titles": {
     "ai-news": "AI News",
     "study-math": "Study Math",
+    "study-english": "Study English",
     "four-ball-billiards": "Four-Ball Billiards",
     "three-cushion-billiards": "Three-Cushion Billiards",
     "ping-pong": "Ping-Pong",
@@ -206,6 +207,7 @@
         "how-an-air-conditioner-works",
         "how-claude-code-works",
         "pomodoro-timer",
+        "study-english",
         "study-math"
       ],
       "match": [
