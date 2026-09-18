@@ -202,6 +202,7 @@
       "blurb": "Things that are not games.",
       "repos": [
         "ai-news",
+        "how-claude-code-works",
         "pomodoro-timer",
         "study-math"
       ],
@@ -215,7 +216,9 @@
         "utility",
         "dashboard",
         "tracker",
-        "reference"
+        "reference",
+        "explainer",
+        "claude-code"
       ]
     }
   ],
