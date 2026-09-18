@@ -20,6 +20,7 @@
     "guitar-game": "Fretboard Fever",
     "ironhold-tower-defense": "Ironhold",
     "drum-game": "Beat Machine",
+    "how-a-car-works": "How a Car Works",
     "how-an-air-conditioner-works": "How an Air Conditioner Works",
     "computer-internal": "How a Computer Works",
     "llm-internal": "How an LLM Works",
@@ -210,6 +211,7 @@
       "repos": [
         "ai-news",
         "computer-internal",
+        "how-a-car-works",
         "how-an-air-conditioner-works",
         "how-claude-code-works",
         "how-the-internet-works",
