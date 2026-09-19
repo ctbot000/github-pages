@@ -156,7 +156,8 @@
         "fishing-game",
         "hollow-pines-farm",
         "pet-raising-game",
-        "deep-drift"
+        "deep-drift",
+        "zoo-emulator"
       ],
       "match": [
         "simulation",
@@ -169,7 +170,9 @@
         "mining",
         "raising",
         "crafting",
-        "barista"
+        "barista",
+        "zoo",
+        "emulator"
       ]
     },
     {
