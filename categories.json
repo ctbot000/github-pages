@@ -28,7 +28,8 @@
     "how-the-internet-works": "How the Internet Works",
     "knowledge-base": "Knowledge Base",
     "car-emulator": "Car Emulator",
-    "universe-emulator": "Universe Emulator"
+    "universe-emulator": "Universe Emulator",
+    "airplane-emulator": "Airplane Emulator"
   },
   "categories": [
     {
@@ -153,13 +154,14 @@
       "icon": "🍳",
       "blurb": "Build, tend, dig and brew.",
       "repos": [
+        "airplane-emulator",
         "barista-game",
         "car-emulator",
         "cooking-game",
+        "deep-drift",
         "fishing-game",
         "hollow-pines-farm",
         "pet-raising-game",
-        "deep-drift",
         "universe-emulator",
         "zoo-emulator"
       ],
