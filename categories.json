@@ -29,7 +29,8 @@
     "knowledge-base": "Knowledge Base",
     "car-emulator": "Car Emulator",
     "universe-emulator": "Universe Emulator",
-    "airplane-emulator": "Airplane Emulator"
+    "airplane-emulator": "Airplane Emulator",
+    "airplane-game": "Skyward Strike"
   },
   "categories": [
     {
@@ -106,6 +107,7 @@
       "icon": "👾",
       "blurb": "Reflex games with a short fuse.",
       "repos": [
+        "airplane-game",
         "ascent",
         "candy-necklace-game",
         "car-racing-game",
