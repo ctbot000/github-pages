@@ -5,6 +5,7 @@
   "titles": {
     "ai-news": "AI News",
     "study-math": "Study Math",
+    "study-science": "Study Science",
     "study-english": "Study English",
     "four-ball-billiards": "Four-Ball Billiards",
     "three-cushion-billiards": "Three-Cushion Billiards",
@@ -231,7 +232,8 @@
         "mobile-phone-internal",
         "pomodoro-timer",
         "study-english",
-        "study-math"
+        "study-math",
+        "study-science"
       ],
       "match": [
         "notes",
