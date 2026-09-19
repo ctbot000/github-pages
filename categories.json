@@ -26,7 +26,8 @@
     "llm-internal": "How an LLM Works",
     "mobile-phone-internal": "How a Mobile Phone Works",
     "how-the-internet-works": "How the Internet Works",
-    "knowledge-base": "Knowledge Base"
+    "knowledge-base": "Knowledge Base",
+    "car-emulator": "Car Emulator"
   },
   "categories": [
     {
@@ -152,6 +153,7 @@
       "blurb": "Build, tend, dig and brew.",
       "repos": [
         "barista-game",
+        "car-emulator",
         "cooking-game",
         "fishing-game",
         "hollow-pines-farm",
