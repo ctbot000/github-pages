@@ -27,7 +27,8 @@
     "mobile-phone-internal": "How a Mobile Phone Works",
     "how-the-internet-works": "How the Internet Works",
     "knowledge-base": "Knowledge Base",
-    "car-emulator": "Car Emulator"
+    "car-emulator": "Car Emulator",
+    "universe-emulator": "Universe Emulator"
   },
   "categories": [
     {
@@ -159,6 +160,7 @@
         "hollow-pines-farm",
         "pet-raising-game",
         "deep-drift",
+        "universe-emulator",
         "zoo-emulator"
       ],
       "match": [
