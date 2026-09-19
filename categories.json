@@ -31,6 +31,7 @@
     "car-emulator": "Car Emulator",
     "universe-emulator": "Universe Emulator",
     "airplane-emulator": "Airplane Emulator",
+    "drone-emulator": "Drone Emulator",
     "airplane-game": "Skyward Strike"
   },
   "categories": [
@@ -162,6 +163,7 @@
         "car-emulator",
         "cooking-game",
         "deep-drift",
+        "drone-emulator",
         "fishing-game",
         "hollow-pines-farm",
         "pet-raising-game",
