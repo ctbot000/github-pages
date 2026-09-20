@@ -35,7 +35,8 @@
     "human-body-emulator": "Human Body Emulator",
     "drone-emulator": "Drone Emulator",
     "airplane-game": "Skyward Strike",
-    "face-beautifier": "Face Beautifier"
+    "face-beautifier": "Face Beautifier",
+    "face-beautifier-auto": "Face Beautifier Auto"
   },
   "categories": [
     {
@@ -230,6 +231,7 @@
         "ai-news",
         "computer-internal",
         "face-beautifier",
+        "face-beautifier-auto",
         "how-a-car-works",
         "how-an-air-conditioner-works",
         "how-claude-code-works",
