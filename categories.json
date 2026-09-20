@@ -34,7 +34,8 @@
     "airplane-emulator": "Airplane Emulator",
     "human-body-emulator": "Human Body Emulator",
     "drone-emulator": "Drone Emulator",
-    "airplane-game": "Skyward Strike"
+    "airplane-game": "Skyward Strike",
+    "face-beautifier": "Face Beautifier"
   },
   "categories": [
     {
@@ -228,6 +229,7 @@
       "repos": [
         "ai-news",
         "computer-internal",
+        "face-beautifier",
         "how-a-car-works",
         "how-an-air-conditioner-works",
         "how-claude-code-works",
@@ -253,7 +255,12 @@
         "tracker",
         "reference",
         "explainer",
-        "claude-code"
+        "claude-code",
+        "camera",
+        "webcam",
+        "filter",
+        "beautifier",
+        "photo"
       ]
     }
   ],
