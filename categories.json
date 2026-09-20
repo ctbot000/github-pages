@@ -32,6 +32,7 @@
     "car-emulator": "Car Emulator",
     "universe-emulator": "Universe Emulator",
     "airplane-emulator": "Airplane Emulator",
+    "human-body-emulator": "Human Body Emulator",
     "drone-emulator": "Drone Emulator",
     "airplane-game": "Skyward Strike"
   },
@@ -167,6 +168,7 @@
         "drone-emulator",
         "fishing-game",
         "hollow-pines-farm",
+        "human-body-emulator",
         "pet-raising-game",
         "universe-emulator",
         "zoo-emulator"
