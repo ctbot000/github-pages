@@ -5,6 +5,7 @@
   "titles": {
     "ai-news": "AI News",
     "study-math": "Study Math",
+    "math-study-map": "The Math Study Map",
     "study-science": "Study Science",
     "study-english": "Study English",
     "four-ball-billiards": "Four-Ball Billiards",
@@ -243,6 +244,7 @@
         "jvm-internal",
         "knowledge-base",
         "llm-internal",
+        "math-study-map",
         "mobile-phone-internal",
         "pomodoro-timer",
         "study-english",
