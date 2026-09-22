@@ -42,7 +42,8 @@
     "face-beautifier": "Face Beautifier",
     "face-beautifier-auto": "Face Beautifier Auto",
     "number-guess-game": "Number Guess",
-    "go-stop-game": "Go-Stop (고스톱)"
+    "go-stop-game": "Go-Stop (고스톱)",
+    "poker-game": "Felt & Fold"
   },
   "categories": [
     {
@@ -60,6 +61,7 @@
         "memory-game",
         "number-guess-game",
         "picross-lab",
+        "poker-game",
         "room-escape-game",
         "room-escape-game-for-kids"
       ],
@@ -79,6 +81,9 @@
         "go-stop",
         "hwatu",
         "matgo",
+        "poker",
+        "holdem",
+        "texas-holdem",
         "room-escape",
         "escape",
         "tower-defense",
