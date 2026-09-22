@@ -44,7 +44,8 @@
     "number-guess-game": "Number Guess",
     "go-stop-game": "Go-Stop (고스톱)",
     "poker-game": "Felt & Fold",
-    "mahjong-game": "Mahjong Solitaire"
+    "mahjong-game": "Mahjong Solitaire",
+    "web-browser-from-scratch": "Mote: A Browser From Scratch"
   },
   "categories": [
     {
@@ -274,7 +275,8 @@
         "pomodoro-timer",
         "study-english",
         "study-math",
-        "study-science"
+        "study-science",
+        "web-browser-from-scratch"
       ],
       "match": [
         "notes",
