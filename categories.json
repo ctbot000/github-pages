@@ -43,7 +43,8 @@
     "face-beautifier-auto": "Face Beautifier Auto",
     "number-guess-game": "Number Guess",
     "go-stop-game": "Go-Stop (고스톱)",
-    "poker-game": "Felt & Fold"
+    "poker-game": "Felt & Fold",
+    "mahjong-game": "Mahjong Solitaire"
   },
   "categories": [
     {
@@ -58,6 +59,7 @@
         "gomoku",
         "ironhold-tower-defense",
         "jigsaw-puzzle",
+        "mahjong-game",
         "memory-game",
         "number-guess-game",
         "picross-lab",
@@ -92,7 +94,9 @@
         "defense",
         "guess",
         "number-guess",
-        "deduction"
+        "deduction",
+        "mahjong",
+        "tile-matching"
       ]
     },
     {
