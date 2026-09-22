@@ -6,6 +6,7 @@
     "ai-news": "AI News",
     "study-math": "Study Math",
     "math-study-map": "The Math Study Map",
+    "english-study-map": "The English Study Map",
     "study-science": "Study Science",
     "study-english": "Study English",
     "four-ball-billiards": "Four-Ball Billiards",
@@ -233,6 +234,7 @@
       "repos": [
         "ai-news",
         "computer-internal",
+        "english-study-map",
         "face-beautifier",
         "face-beautifier-auto",
         "how-a-car-works",
