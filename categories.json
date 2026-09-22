@@ -195,6 +195,7 @@
         "hollow-pines-farm",
         "human-body-emulator",
         "pet-raising-game",
+        "physics-playground",
         "universe-emulator",
         "zoo-emulator"
       ],
@@ -211,7 +212,10 @@
         "crafting",
         "barista",
         "zoo",
-        "emulator"
+        "emulator",
+        "physics",
+        "playground",
+        "sandbox"
       ]
     },
     {
