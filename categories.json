@@ -41,7 +41,8 @@
     "airplane-game": "Skyward Strike",
     "face-beautifier": "Face Beautifier",
     "face-beautifier-auto": "Face Beautifier Auto",
-    "number-guess-game": "Number Guess"
+    "number-guess-game": "Number Guess",
+    "go-stop-game": "Go-Stop (고스톱)"
   },
   "categories": [
     {
@@ -52,6 +53,7 @@
       "repos": [
         "chess",
         "cola-bomb",
+        "go-stop-game",
         "gomoku",
         "ironhold-tower-defense",
         "jigsaw-puzzle",
@@ -74,6 +76,9 @@
         "minesweeper",
         "solitaire",
         "card-game",
+        "go-stop",
+        "hwatu",
+        "matgo",
         "room-escape",
         "escape",
         "tower-defense",
