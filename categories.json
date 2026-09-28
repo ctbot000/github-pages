@@ -46,7 +46,8 @@
     "poker-game": "Felt & Fold",
     "mahjong-game": "Mahjong Solitaire",
     "web-browser-from-scratch": "Mote: A Browser From Scratch",
-    "qr-coder": "QR Coder"
+    "qr-coder": "QR Coder",
+    "share-anything": "Share Anything"
   },
   "categories": [
     {
@@ -275,6 +276,7 @@
         "mobile-phone-internal",
         "pomodoro-timer",
         "qr-coder",
+        "share-anything",
         "study-english",
         "study-math",
         "study-science",
