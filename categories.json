@@ -47,7 +47,8 @@
     "mahjong-game": "Mahjong Solitaire",
     "web-browser-from-scratch": "Mote: A Browser From Scratch",
     "qr-coder": "QR Coder",
-    "share-anything": "Share Anything"
+    "share-anything": "Share Anything",
+    "camera-cast": "Camera Cast"
   },
   "categories": [
     {
@@ -259,6 +260,7 @@
       "blurb": "Things that are not games.",
       "repos": [
         "ai-news",
+        "camera-cast",
         "computer-internal",
         "english-study-map",
         "face-beautifier",
