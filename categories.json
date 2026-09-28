@@ -45,7 +45,8 @@
     "go-stop-game": "Go-Stop (고스톱)",
     "poker-game": "Felt & Fold",
     "mahjong-game": "Mahjong Solitaire",
-    "web-browser-from-scratch": "Mote: A Browser From Scratch"
+    "web-browser-from-scratch": "Mote: A Browser From Scratch",
+    "qr-coder": "QR Coder"
   },
   "categories": [
     {
@@ -273,6 +274,7 @@
         "math-study-map",
         "mobile-phone-internal",
         "pomodoro-timer",
+        "qr-coder",
         "study-english",
         "study-math",
         "study-science",
