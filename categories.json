@@ -48,7 +48,8 @@
     "web-browser-from-scratch": "Mote: A Browser From Scratch",
     "qr-coder": "QR Coder",
     "share-anything": "Share Anything",
-    "camera-cast": "Camera Cast"
+    "camera-cast": "Camera Cast",
+    "ctb-world": "CTB World"
   },
   "categories": [
     {
@@ -193,6 +194,7 @@
         "barista-game",
         "car-emulator",
         "cooking-game",
+        "ctb-world",
         "deep-drift",
         "drone-emulator",
         "fishing-game",
