@@ -50,7 +50,8 @@
     "share-anything": "Share Anything",
     "camera-cast": "Camera Cast",
     "ctb-world": "CTB World",
-    "kids-world": "Kids World"
+    "kids-world": "Kids World",
+    "rgb-game": "RGB Guess"
   },
   "categories": [
     {
@@ -70,6 +71,7 @@
         "number-guess-game",
         "picross-lab",
         "poker-game",
+        "rgb-game",
         "room-escape-game",
         "room-escape-game-for-kids"
       ],
